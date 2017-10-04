@@ -1,5 +1,5 @@
 {
-  "name": "isit-code",
+  "name": "isit-code-delduca",
   "version": "1.0.0",
   "description": "Code samples and utilities.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/charliecalvert/JsObjects.git"
+    "url": "git+ssh://git@github.com:delducaryan/isit-code-delduca.git"
   },
   "keywords": [
     "Elvenware",
