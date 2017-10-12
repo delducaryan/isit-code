@@ -1,6 +1,6 @@
 {
   "name": "isit-code-delduca",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Code samples and utilities.",
   "main": "index.js",
   "scripts": {
