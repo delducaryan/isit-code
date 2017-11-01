@@ -24,7 +24,7 @@ describe('test elven-config suite', function() {
         elfConfig.useLocalConfig = false;
         elfConfig.loadAsync()
             .then(function(data) {
-                expect(data.calvert['base-dir']).toBe('/home/charlie/');
+                expect(data.calvert['base-dir']).toBe('/home/bcuser');
                 expect(data.calvert['bootswatch']).toBeDefined();
                 expect(data.calvert['most-recent-date']).toBeDefined();
                 expect(data.calvert['site-dirs']).toBeDefined();
@@ -69,7 +69,7 @@ describe('test elven-config suite', function() {
         elfConfig.loadAsync()
             .then(function() {
                 const dir = elfConfig.get('calvert', 'base-dir');
-                expect(dir).toBe('/home/charlie/');
+                expect(dir).toBe('/home/bcuser');
             })
             .catch(errorHandler)
             .then(done);

@@ -67,9 +67,9 @@ describe('Elf String Util Suite', function() {
         });
         
         it('removes from end of a string at character', function() {
-            var testString = '/home/charlie/ElvenCode/spec';
+            var testString = '/home/bcuserElvenCode/spec';
             var result = elfUtils.removeFromEndAtCharacter(testString, path.sep);
-            expect(result).toBe('/home/charlie/ElvenCode');
+            expect(result).toBe('/home/bcuserElvenCode');
         });
 
         it('removes characters from string', function() {

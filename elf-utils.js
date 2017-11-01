@@ -246,7 +246,7 @@ function stripWhiteSpace(value) {
 
 /* Creates directory with name like:
  *
- *   /home/charlie/2017-09-03-21-09-09
+ *   /home/bcuser2017-09-03-21-09-09
  *
  */
 function createDateDir() {
