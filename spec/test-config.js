@@ -25,17 +25,10 @@ describe('test elven-config suite', function() {
         elfConfig.useLocalConfig = false;
         elfConfig.loadAsync()
             .then(function(data) {
-<<<<<<< HEAD
-                expect(data.calvert['base-dir']).toBe('/home/bcuser');
-                expect(data.calvert['bootswatch']).toBeDefined();
-                expect(data.calvert['most-recent-date']).toBeDefined();
-                expect(data.calvert['site-dirs']).toBeDefined();
-=======
                 expect(data.users[lastname]['base-dir']).toBe('/home/charlie/');
                 expect(data.users[lastname]['bootswatch']).toBeDefined();
                 expect(data.users[lastname]['most-recent-date']).toBeDefined();
                 expect(data.users[lastname]['site-dirs']).toBeDefined();
->>>>>>> a09183243691b7f35b3f43e962114a50be82c995
             })
             .catch(errorHandler)
             .then(done);
@@ -87,13 +80,8 @@ describe('test elven-config suite', function() {
     it('shows we can get the lastname base dir', function(done) {
         elfConfig.loadAsync()
             .then(function() {
-<<<<<<< HEAD
-                const dir = elfConfig.get('calvert', 'base-dir');
-                expect(dir).toBe('/home/bcuser');
-=======
                 const dir = elfConfig.get('users', lastname, 'base-dir');
                 expect(dir).toBe('/home/charlie/');
->>>>>>> a09183243691b7f35b3f43e962114a50be82c995
             })
             .catch(errorHandler)
             .then(done);
